@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Sheenam.Api.Brokers.Storages
 {
-    public partial class StorageBroker:EFxceptionsContext
+    public partial class StorageBroker:EFxceptionsContext,IStorageBroker
     {
         public readonly IConfiguration configuration;
 
