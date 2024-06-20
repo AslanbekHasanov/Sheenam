@@ -16,6 +16,6 @@ namespace Sheenam.Api.Services.Foundations.Guests
             this.storageBroker = storageBroker;
             
         public ValueTask<Guest> AddGuestAsync(Guest guest)=>
-            throw new NotImplementedException();
+            this.storageBroker.InsertGuestAsync(guest);
     }
 }
